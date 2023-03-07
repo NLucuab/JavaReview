@@ -38,5 +38,9 @@ public class CheckingAccount extends BankAccount{
             this.deposit(20);
         }
     }
+    @Override
+    public String toString() {
+        return "Checking Account: $" + getBalance();
+    }
 
 }

@@ -37,5 +37,11 @@ public class BankAccount {
             other.deposit(amount);
             System.out.println("Transfer Complete");
         }
+
+    }
+
+    @Override
+    public String toString() {
+        return "Bank Account: $" + getBalance();
     }
 }

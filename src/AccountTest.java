@@ -33,16 +33,17 @@ public class AccountTest {
         //System.out.println("Checking Account Balance: $" + firstAccount.getBalance());
 
         CheckingAccount schoolSpending = new CheckingAccount();
-        System.out.println("Checking Account: $" + schoolSpending.getBalance());
+        //System.out.println("Checking Account: $" + schoolSpending.getBalance());
         schoolSpending.deposit(100.00);
 
         System.out.println("Checking Account: $" + schoolSpending.getBalance());
+        System.out.println(schoolSpending);
         System.out.println("Transaction count: " + schoolSpending.getTransactionCount());
 
         SavingsAccount saveVacation = new SavingsAccount(1, 100);
-        System.out.println("Savings Day 1: $" + saveVacation.getBalance());
+        //System.out.println("Savings Day 1: $" + saveVacation.getBalance());
         saveVacation.addInterest();
-        System.out.println("Savings Day 2: $" + saveVacation.getBalance());
+        //System.out.println("Savings Day 2: $" + saveVacation.getBalance());
 
         saveVacation.transfer(schoolSpending, 10);
         System.out.println("School Spending Account: $" + schoolSpending.getBalance());
